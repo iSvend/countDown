@@ -2,8 +2,8 @@
 	
     app.controller('TimerController', function ($scope) {
 		$scope.eventDay = {
-			date: new Date('September 18, 2014 20:00:00'),
-			eventDetails: 'Mr. Olympia 2014 – Las Vegas, Nevada'
+			date: new Date('September 15, 2016 20:00:00'),
+			eventDetails: 'Grand Opening'
 		};
 		$scope.timeTillEvent = {};
 		

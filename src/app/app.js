@@ -11,7 +11,6 @@
     });
 
 }(angular.module("countDown", [
-    'countDown.home',
     'countDown.timer',
     'templates-app',
     'templates-common',
