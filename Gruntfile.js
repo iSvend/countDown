@@ -116,7 +116,7 @@ module.exports = function(grunt) {
         clean: {
             all: [
                 '<%= build_dir %>',
-                '<%= compile_dir %>'
+                //'<%= compile_dir %>'
             ],
             vendor: [
                 '<%= build_dir %>/vendor/'
