@@ -1,9 +1,11 @@
-<div class="jumbotron">
-<h1>{{ eventDay.eventDetails }}</h1>
-<h2>{{ timeTillEvent.daysLeft }} <span>days,</span></h2>
-<h2>
-{{ timeTillEvent.hoursLeft }} hours,
-{{ timeTillEvent.minutesLeft }} minutes and
-{{ timeTillEvent.secondsLeft }} seconds remaining !
-</h2>
+<div class="timer-container">
+	<div class="jumbotron">
+		<div class="container">
+			<img src="assets/img/BC-25th.png" class="img-responsive">
+			<h1 class="exclamation">!</h1>
+			<h1>{{ eventDay.eventDetails }}</h1>
+			<h2>in</h2>
+			<h1>{{ timeTillEvent.daysLeft }} days</h1>
+		</div>
+	</div>
 </div>
