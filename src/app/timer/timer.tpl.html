@@ -1,15 +1,15 @@
 <div class="timer-container">
 	<div class="jumbotron">
 		<div class="container">
-			<a href="http://www.boiseauditorium.com/expansion/" target="_blank"><img src="assets/img/expansion_logo.png" class="img-responsive logo"></a>
-			<h1 class="exclamation">!</h1>
-			<h1>{{ eventDay.eventDetails }}</h1>
-			<h2>in</h2>
-			<h1>{{ timeTillEvent.daysLeft }} days</h1>
+			<a href="http://www.boiseauditorium.com/expansion/" target="_blank"><img src="assets/img/getting_bigger.png" class="img-responsive logo"></a>
+			<div id="countdown">
+				<h2>in</h2>
+				<h1>{{ timeTillEvent.daysLeft }} days</h1>
+			</div>
 		</div>
 		<div class="container">
 		    <span>* Note: The timer is currently counting down to {{eventDay.date | date:'MM/dd/yyyy @ h:mma'}}. We can edit this time with the actual opening date/time.<br />We can also include smaller increments of time:<br />
-		    {{ timeTillEvent.daysLeft }} days, {{ timeTillEvent.hoursLeft }} hours, {{ timeTillEvent.minutesLeft }} minutes, {{ timeTillEvent.secondsLeft }} seconds.</span>
+			{{ timeTillEvent.daysLeft }} days, {{ timeTillEvent.hoursLeft }} hours, {{ timeTillEvent.minutesLeft }} minutes, {{ timeTillEvent.secondsLeft }} seconds.</span>
 		</div>
 	</div>
 </div>
