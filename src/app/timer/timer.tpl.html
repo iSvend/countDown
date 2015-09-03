@@ -1,8 +1,9 @@
 <div class="timer-container">
 	<div ng-controller="CarouselCtrl" class="jumbotron">
-		<carousel interval="3000" no-pause="true">
+		<carousel interval="6000" no-pause="true">
 			<slide>
 		  		<div class="container">
+				<div style="position:relative;top:50%;transform:translateY(-50%);">
 					<a href="http://www.boiseauditorium.com/expansion/" target="_blank"><img src="assets/img/getting_bigger.png" class="img-responsive logo"></a>
 					<div class="countdown hidden-xs">
 						<h1>{{ eventDay.eventDetails }} in {{ timeTillEvent.daysLeft }} days</h1>
@@ -16,6 +17,7 @@
 							days
 						</h1>
 					</div>
+				</div>
 				</div>
 				<!--
 					<div class="container">
