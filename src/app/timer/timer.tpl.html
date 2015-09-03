@@ -1,25 +1,64 @@
 <div class="timer-container">
-	<div class="jumbotron">
-		<div class="container">
-			<a href="http://www.boiseauditorium.com/expansion/" target="_blank"><img src="assets/img/getting_bigger.png" class="img-responsive logo"></a>
-			<div class="countdown hidden-xs">
-				<h1>{{ eventDay.eventDetails }} in {{ timeTillEvent.daysLeft }} days</h1>
-			</div>
-			<div class="countdown visible-xs">
-				<h1>
-					{{ eventDay.eventDetails }} in
-					<br>
-					<span class="mobile-days">{{ timeTillEvent.daysLeft }}</span>
-					<br>
-					days
-				</h1>
-			</div>
-		</div>
-		<!--
-			<div class="container">
-		    <span>* Note: The timer is currently counting down to {{eventDay.date | date:'MM/dd/yyyy @ h:mma'}}. We can edit this time with the actual opening date/time.<br />We can also include smaller increments of time:<br />
-			{{ timeTillEvent.daysLeft }} days, {{ timeTillEvent.hoursLeft }} hours, {{ timeTillEvent.minutesLeft }} minutes, {{ timeTillEvent.secondsLeft }} seconds.</span>
-			</div>
-		-->
+	<div ng-controller="CarouselCtrl" class="jumbotron">
+		<carousel interval="3000" no-pause="true">
+			<slide>
+		  		<div class="container">
+					<a href="http://www.boiseauditorium.com/expansion/" target="_blank"><img src="assets/img/getting_bigger.png" class="img-responsive logo"></a>
+					<div class="countdown hidden-xs">
+						<h1>{{ eventDay.eventDetails }} in {{ timeTillEvent.daysLeft }} days</h1>
+					</div>
+					<div class="countdown visible-xs">
+						<h1>
+							{{ eventDay.eventDetails }} in
+							<br>
+							<span class="mobile-days">{{ timeTillEvent.daysLeft }}</span>
+							<br>
+							days
+						</h1>
+					</div>
+				</div>
+				<!--
+					<div class="container">
+					<span>* Note: The timer is currently counting down to {{eventDay.date | date:'MM/dd/yyyy @ h:mma'}}. We can edit this time with the actual opening date/time.<br />We can also include smaller increments of time:<br />
+					{{ timeTillEvent.daysLeft }} days, {{ timeTillEvent.hoursLeft }} hours, {{ timeTillEvent.minutesLeft }} minutes, {{ timeTillEvent.secondsLeft }} seconds.</span>
+					</div>
+				-->
+			</slide>
+			<slide>
+				<div style="background:url('assets/img/1.jpg') no-repeat;background-size:cover;background-position:bottom;height:100vh;">
+				  <div class="caption">
+				    <h3>View of City Center Plaza and Boise Centre East</h3>
+				  </div>
+				</div>
+			</slide>
+			<slide>
+				<div style="background:url('assets/img/2.jpg') no-repeat;background-size:cover;background-position:bottom;height:100vh;">
+				  <div class="caption">
+				    <h3>New Ballroom to seat 800 people and 12 meeting rooms<br> Perfect for meetings, conventions and special events</h3>
+				  </div>
+				</div>
+			</slide>
+			<slide>
+				<div style="background:url('assets/img/3.jpg') no-repeat;background-size:cover;background-position:bottom;height:100vh;">
+				  <div class="caption">
+				    <h3>Spacious glass enclosed lobby overlooking the Grove Plaza<br>Ideal for networking, registration and receptions</h3>
+				  </div>
+				</div>
+			</slide>
+			<slide>
+				<div style="background:url('assets/img/4.jpg') no-repeat;background-size:cover;background-position:bottom;height:100vh;">
+				  <div class="caption">
+				    <h3>View of Boise Centre East from Capitol Boulevard</h3>
+				  </div>
+				</div>
+			</slide>
+			<slide>
+				<div style="background:url('assets/img/5.jpg') no-repeat;background-size:cover;background-position:bottom;height:100vh;">
+				  <div class="caption">
+				    <h3>View of Boise Centre East from Grove Plaza<br>To learn more visit <a href="http://www.boisecentre.com" target="_blank" style="color:#fff;">www.boisecentre.com</a></h3>
+				  </div>
+				</div>
+			</slide>
+			</carousel>
 	</div>
 </div>

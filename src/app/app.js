@@ -7,7 +7,7 @@
 
     app.run(function () {});
 
-    app.controller('AppController', function ($scope) {
+app.controller('AppController', function ($scope) {
 
     });
 
@@ -17,4 +17,5 @@
     'templates-common',
     'ui.router.state',
     'ui.router',
+	'ui.bootstrap',
 ])));

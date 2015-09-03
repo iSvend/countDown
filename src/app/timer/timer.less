@@ -20,11 +20,11 @@
   .jumbotron {
     min-height:100vh;
 	margin:0;
-	// background:url('img/plaza_exterior.jpg') no-repeat;
-	background-size:cover;
+	padding:0;
   }
   .container {
     text-align:center;
+	height:100vh;
   }
   .exclamation {
     margin-right:-530px;
@@ -35,6 +35,20 @@
   }
   .logo {
     max-width:500px;
+	margin-top:40px;
+  }
+  .carousel-control, .carousel-indicators {
+  visibility:hidden;
+  }
+  .caption {
+    background:#76a12e;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	h3 {
+	  margin:9px 0;
+	  color:#fff;
+	}
   }
 
   /* Extra Small Devices, Phones */ 
@@ -52,6 +66,9 @@
         }
 		.mobile-days {
 		font-size:2.7em;
+		}
+		.caption {
+		  bottom:67px;
 		}
       }
   /* Small Devices, Tablets */
