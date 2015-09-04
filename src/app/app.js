@@ -13,6 +13,7 @@ app.controller('AppController', function ($scope) {
 
 }(angular.module("countDown", [
     'countDown.timer',
+	'countDown.days',
     'templates-app',
     'templates-common',
     'ui.router.state',

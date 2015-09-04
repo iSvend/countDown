@@ -1,0 +1,68 @@
+.days-container {
+  overflow:hidden;
+  img {
+    margin:auto;
+    padding:0 40px;
+  }
+  h1, h2 {
+  color:#444;
+  font-size:4.5em;
+  }
+  .countdown {
+    margin-top:-30px;
+  }
+  .jumbotron {
+    min-height:100vh;
+	margin:0;
+	padding:0;
+  }
+  .container {
+    text-align:center;
+	height:100vh;
+  }
+  .logo {
+    max-width:560px;
+  }
+
+  /* Extra Small Devices, Phones */ 
+      @media only screen and (max-width : 480px) {
+		.logo {
+		max-width:100%;
+		}
+        h1 {
+          font-size:3.6em;
+		  margin-top:20px;
+        }
+        h2 {
+          margin:-49px 0 -40px -130px;
+          font-size:2.8em;
+        }
+		.caption {
+		  bottom:0px;
+		  h3 {
+		    font-size:1.1em;
+			position:relative;
+		    top:50% !important;
+		    transform:translateY(-50%) !important;
+		  }
+		}
+		.mobile-days {
+		font-size:2.7em;
+		}
+		.rendering {
+		//margin-top:-167px;
+		}
+      }
+  /* Small Devices, Tablets */
+      @media only screen and (max-width : 768px) {
+        
+    }
+  /* Medium-Large Devices */
+      @media only screen and (min-width: 768px) {
+	    .bigger {
+		  position:relative;
+		  top:50%;
+		  transform:translateY(-50%);
+		}
+	  }
+}

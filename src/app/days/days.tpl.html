@@ -1,0 +1,26 @@
+<div class="days-container">
+	<div class="container">
+		<div class="bigger">
+			<a href="http://www.boiseauditorium.com/expansion/" target="_blank"><img src="assets/img/getting_bigger.png" class="img-responsive logo"></a>
+			<div class="countdown hidden-xs">
+				<h1>{{ eventDay.eventDetails }} in {{ timeTillEvent.daysLeft }} days</h1>
+			</div>
+			<div class="countdown visible-xs">
+				<h1>
+					{{ eventDay.eventDetails }} in
+					<br>
+					<span class="mobile-days">{{ timeTillEvent.daysLeft }}</span>
+					<br>
+					days
+				</h1>
+			</div>
+		</div>
+	</div>
+	<!--
+		<div class="container">
+		<span>* Note: The timer is currently counting down to {{eventDay.date | date:'MM/dd/yyyy @ h:mma'}}. We can edit this time with the actual opening date/time.<br />We can also include smaller increments of time:<br />
+		{{ timeTillEvent.daysLeft }} days, {{ timeTillEvent.hoursLeft }} hours, {{ timeTillEvent.minutesLeft }} minutes, {{ timeTillEvent.secondsLeft }} seconds.</span>
+		</div>
+	-->
+	
+</div>

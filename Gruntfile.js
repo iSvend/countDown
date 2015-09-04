@@ -130,6 +130,15 @@ module.exports = function(grunt) {
          * 'build_dir', and then to copy the assets to 'compile_dir'.
          */
         copy: {
+            build_web_config: {
+                files: [
+                    {
+                        src: [ 'web.config'],
+                        dest: '<%= build_dir %>',
+                        expand: true
+                    }   
+                ]
+            },
             build_app_assets: {
                 files: [
                     {
@@ -645,7 +654,7 @@ module.exports = function(grunt) {
     // The 'build' task gets your app ready to run for development and testing.
     grunt.registerTask('build', [
         'clean:all', 'html2js', 'jshint', 'coffeelint', 'coffee', 'less:build',
-        'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
+        'concat:build_css', 'copy:build_web_config', 'copy:build_app_assets', 'copy:build_vendor_assets',
         'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss', 'ngAnnotate:build', 'index:build', 'karmaconfig',
         'karma:continuous'
     ]);
