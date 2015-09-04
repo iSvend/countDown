@@ -2,7 +2,7 @@
 	
     app.controller('TimerController', function ($scope) {
 		$scope.eventDay = {
-			date: new Date('August 31, 2016 08:00:00'),
+			date: new Date('September 1, 2016 08:00:00'),
 			eventDetails: 'Opening'
 		};
 		$scope.timeTillEvent = {};
