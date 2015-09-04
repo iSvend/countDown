@@ -2,7 +2,7 @@
 
     module.config(function ($stateProvider) {
         $stateProvider.state('days', {
-            url: '/days',
+            url: '/count_only',
             views: {
                 "main": {
                     controller: 'DaysController as model',

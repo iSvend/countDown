@@ -11,9 +11,9 @@
 			$scope.seconds = ($scope.eventDay.date - new Date()) / 1000;
 			$scope.timeTillEvent = {
 				daysLeft: parseInt($scope.seconds / 86400),
-				hoursLeft: parseInt($scope.seconds % 86400 / 3600),
-				minutesLeft: parseInt($scope.seconds % 86400 % 3600 / 60),
-				secondsLeft: parseInt($scope.seconds % 86400 % 3600 % 60)
+				hoursLeft: parseInt($scope.seconds / 3600),
+				minutesLeft: parseInt($scope.seconds / 60),
+				secondsLeft: parseInt($scope.seconds)
 			};
 		};
 		
