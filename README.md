@@ -13,4 +13,4 @@ $ npm install
 $ bower install
 $ grunt watch
 ```
-![boom](http://i.giphy.com/PSyqVLhwDvjXO.gif)
+![boom](http://i.giphy.com/H6jVFw6KGRNmM.gif)
